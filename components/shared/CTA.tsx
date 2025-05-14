@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
-
+import { AcademicPartners, IndustryPartners } from "@/lib/staticData";
 
 const CTA = () => {
   return (
@@ -27,20 +27,19 @@ const CTA = () => {
                 Academic Partners
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {Array.from({ length: 8 }).map((_, index) => (
+                {AcademicPartners.map((partner, index) => (
                   <div
-                    key={index}
-                    className="bg-white p-6 rounded-xl flex items-center justify-center h-32"
+                  key={partner.name}
+                  className="bg-white p-2 rounded-xl flex items-center justify-center h-32"
                   >
-                    <Image
-                      src={`/placeholder.svg?height=80&width=160&text=University ${
-                        index + 1
-                      }`}
-                      alt={`Academic Partner ${index + 1}`}
-                      width={160}
-                      height={80}
-                      className="max-h-full"
-                    />
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={160}
+                    height={80}
+                    style={{objectFit: "contain"}}
+                    className="max-h-full"
+                  />
                   </div>
                 ))}
               </div>
@@ -52,20 +51,19 @@ const CTA = () => {
                 Industry Partners
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {Array.from({ length: 8 }).map((_, index) => (
+                {IndustryPartners.map((partner, index) => (
                   <div
-                    key={index}
-                    className="bg-white p-6 rounded-xl flex items-center justify-center h-32"
+                  key={partner.name}
+                  className="bg-white p-2 rounded-xl flex items-center justify-center h-32"
                   >
-                    <Image
-                      src={`/placeholder.svg?height=80&width=160&text=Company ${
-                        index + 1
-                      }`}
-                      alt={`Industry Partner ${index + 1}`}
-                      width={160}
-                      height={80}
-                      className="max-h-full"
-                    />
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={160}
+                    height={80}
+                    style={{ objectFit: "contain" }}
+                    className="max-h-full"
+                  />
                   </div>
                 ))}
               </div>

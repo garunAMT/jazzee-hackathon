@@ -34,8 +34,11 @@ const Judges = () => {
                       </div>
                       <div className="p-4">
                         <h3 className="font-bold text-lg">{judge.name}</h3>
-                        <p className="text-sm text-gray-500">{judge.title}</p>
-                        <p className="text-sm text-gray-500">{judge.company}</p>
+                        <p className="text-sm text-gray-500">
+                          {judge.post}
+                          {judge.company ? `, ${judge.company}` : ""}
+                        </p>
+                        {/* <p className="text-sm text-gray-500">{judge.company}</p> */}
                       </div>
                     </div>
                   ))}

@@ -30,34 +30,34 @@ const TimelineItem = ({
 }: TimelineItemProps) => (
     <div className="flex">
         <div className="flex flex-col items-center mr-4">
-            <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary bg-background">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-primary bg-background">
                 <Icon className="w-5 h-5 text-primary" />
             </div>
             {!isLast && <div className="w-0.5 h-full bg-primary mt-2"></div>}
         </div>
-        <div className="flex-1 mb-6">
+        <div className="flex-1 md:min-w-xl mb-6">
             <Card className="mb-2">
                 <CardHeader>
-                    <CardTitle>{title}</CardTitle>
+                    <CardTitle className="text-orange-500 font-bold text-xl">{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                     {content}
                 </CardContent>
             </Card>
-            {subItems.map((item, index) => (
+            {/* {subItems.map((item, index) => (
                 <Card key={index} className="ml-8 mt-2 border-dashed">
                     <CardHeader>
                         <CardTitle className="text-sm">{item.title}</CardTitle>
                     </CardHeader>
                     <CardContent>{item.content}</CardContent>
                 </Card>
-            ))}
-            {cumulativeTime && (
+            ))} */}
+            {/* {cumulativeTime && (
                 <div className="mt-2 text-right">
                     <span className="bg-muted px-2 py-1 rounded text-sm font-semibold">{cumulativeTime}</span>
                 </div>
-            )}
+            )} */}
         </div>
     </div>
 )
