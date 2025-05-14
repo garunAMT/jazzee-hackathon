@@ -1,4 +1,4 @@
-export const Judges = [
+export const JudgeDetails = [
     {
         id: 1,
         name: "Dr. John Doe",

@@ -26,7 +26,7 @@ const Hero = () => {
             2025 Edition
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-            GENAI HACKATHON T$O - 2025
+            GENAI HACKATHON <br /> Trillion Dollar Opportunity - 2025
           </h1>
           <p className="text-xl md:text-2xl font-medium text-orange-600">
             Innovate | Build | Compete

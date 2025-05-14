@@ -28,7 +28,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-orange-400">
+                  <Link href="/faq" className="hover:text-orange-400">
                     FAQ
                   </Link>
                 </li>
@@ -55,8 +55,8 @@ const Footer = () => {
             </div>
             <div>
               <h4 className="font-bold text-white mb-4">Contact</h4>
-              <p className="text-sm mb-2">Tech Innovation Center</p>
-              <p className="text-sm mb-2">Bangalore, India</p>
+              <p className="text-sm mb-2 text-orange-500">Jazzee Technologies</p>
+              <p className="text-sm mb-2">Bhubaneswar, India</p>
               <p className="text-sm">info@genaihackathon.com</p>
             </div>
           </div>
