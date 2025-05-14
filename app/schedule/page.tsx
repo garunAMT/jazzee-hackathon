@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { TracingBeam } from "@/components/ui/tracing-beam"
 import { Clock, CheckCircle, XCircle, FileSearch, Building, AlertCircle, LucideIcon } from "lucide-react"
 import { ReactNode } from "react"
 
@@ -218,12 +219,15 @@ export default function ProcessFlowSinglePaths() {
     )
 
     return (
+        
         <div className="container mx-auto p-4 space-y-8 max-w-6xl">
             <h1 className="text-3xl font-bold text-center mb-8">T$O Hackathon Schedule</h1>
             <div className="flex items-center justify-center gap-8">
+            <TracingBeam className="px-6">
                 {renderHomesNSWPath()}
                 {/* {renderLandcomPath()} */}
                 {/* {renderFinalSteps(0)} */}
+            </TracingBeam>
             </div>
         </div>
     )

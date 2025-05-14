@@ -43,7 +43,7 @@ export function NavigationBar() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton variant="primary" className="bg-orange-500 text-white">Register</NavbarButton>
+            <NavbarButton as={"a"} href={"https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"} target="_blank" variant="primary" className="bg-orange-500 text-white">Register</NavbarButton>
           </div>
         </NavBody>
 
@@ -73,19 +73,22 @@ export function NavigationBar() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
+              as={"a"}
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
+                href={"https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"}
+                target="_blank"
+                className="w-full bg-orange-500 text-white"
               >
-                Login
+                Register
               </NavbarButton>
-              <NavbarButton
+              {/* <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
               >
                 Book a call
-              </NavbarButton>
+              </NavbarButton> */}
             </div>
           </MobileNavMenu>
         </MobileNav>

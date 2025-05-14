@@ -56,8 +56,8 @@ export default function ResultsPage() {
                     </div>
 
                     {/* 1st Place */}
-                    <div className="order-0 md:order-2 w-full md:w-1/3 bg-gradient-to-b from-orange-100 to-orange-200 rounded-t-lg pt-8 pb-10 px-4 text-center">
-                      <div className="w-24 h-24 rounded-full bg-orange-300 border-4 border-orange-500 flex items-center justify-center mx-auto mb-4">
+                    <div className="order-0 md:order-2 w-full md:w-1/3 bg-gradient-to-b from-amber-100 to-amber-200 rounded-t-lg pt-8 pb-10 px-4 text-center">
+                      <div className="w-24 h-24 rounded-full bg-amber-300 border-4 border-amber-400 flex items-center justify-center mx-auto mb-4">
                         <span className="text-4xl font-bold">1</span>
                       </div>
                       <h3 className="font-bold text-2xl mb-1">Team Quantum</h3>
@@ -66,8 +66,8 @@ export default function ResultsPage() {
                     </div>
 
                     {/* 3rd Place */}
-                    <div className="order-2 md:order-3 w-full md:w-1/3 bg-gradient-to-b from-amber-100 to-amber-200 rounded-t-lg pt-4 pb-6 px-4 text-center transform md:translate-y-8">
-                      <div className="w-16 h-16 rounded-full bg-amber-300 border-4 border-amber-400 flex items-center justify-center mx-auto mb-4">
+                    <div className="order-2 md:order-3 w-full md:w-1/3 bg-gradient-to-b from-orange-100 to-orange-200 rounded-t-lg pt-4 pb-6 px-4 text-center transform md:translate-y-8">
+                      <div className="w-16 h-16 rounded-full bg-orange-300 border-4 border-orange-500 flex items-center justify-center mx-auto mb-4">
                         <span className="text-2xl font-bold">3</span>
                       </div>
                       <h3 className="font-bold text-lg mb-1">Team CodeCrafters</h3>

@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Button } from "../ui/button";
 import { WhyJoinCards } from "./WhyJoinCards";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -34,11 +35,11 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <Calendar className="h-5 w-5 text-orange-500" />
-              <span>March 15-17, 2025</span>
+              <span>July 10-12, 2025</span>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <MapPin className="h-5 w-5 text-orange-500" />
-              <span>Tech Innovation Center, Bangalore</span>
+              <span> IIT Bhubaneswar, Odisha, India</span>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <Clock className="h-5 w-5 text-orange-500" />
@@ -46,16 +47,24 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
-              Register Now
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-orange-500 text-orange-500 hover:bg-orange-50"
+            <Link
+              href={
+                "https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"
+              }
             >
-              Learn More
-            </Button>
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
+                Register Now
+              </Button>
+            </Link>
+            <Link href={"#about"}>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-orange-500 text-orange-500 hover:bg-orange-50"
+              >
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -69,10 +78,26 @@ const Hero = () => {
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto text-gray-500">
-              Welcome to T$O 2025, a premier GENAI Hackathon that brings together the brightest minds in artificial intelligence and technology. This 48-hour innovation marathon challenges participants to harness the power of generative AI to create groundbreaking solutions that address real-world problems. Whether you're a seasoned AI developer, a creative problem solver, or an innovative thinker, this hackathon provides the perfect platform to showcase your skills and push the boundaries of what's possible with AI.
+              Welcome to T$O 2025, a premier GENAI Hackathon that brings
+              together the brightest minds in artificial intelligence and
+              technology. This 48-hour innovation marathon challenges
+              participants to harness the power of generative AI to create
+              groundbreaking solutions that address real-world problems. Whether
+              you're a seasoned AI developer, a creative problem solver, or an
+              innovative thinker, this hackathon provides the perfect platform
+              to showcase your skills and push the boundaries of what's possible
+              with AI.
             </p>
             <p className="max-w-3xl mx-auto text-gray-500">
-                With access to cutting-edge AI models, cloud resources, and expert mentorship, participants will have the opportunity to transform their ideas into functional prototypes. The hackathon focuses on practical applications across software development, cybersecurity, and IoT, encouraging cross-disciplinary collaboration and innovative thinking. Join us in this exciting journey where you'll network with industry leaders, learn from peers, and potentially kickstart your career in the rapidly evolving field of generative AI.
+              With access to cutting-edge AI models, cloud resources, and expert
+              mentorship, participants will have the opportunity to transform
+              their ideas into functional prototypes. The hackathon focuses on
+              practical applications across software development, cybersecurity,
+              and IoT, encouraging cross-disciplinary collaboration and
+              innovative thinking. Join us in this exciting journey where you'll
+              network with industry leaders, learn from peers, and potentially
+              kickstart your career in the rapidly evolving field of generative
+              AI.
             </p>
           </div>
 

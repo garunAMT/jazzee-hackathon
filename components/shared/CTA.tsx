@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { AcademicPartners, IndustryPartners } from "@/lib/staticData";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -29,17 +30,17 @@ const CTA = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {AcademicPartners.map((partner, index) => (
                   <div
-                  key={partner.name}
-                  className="bg-white p-2 rounded-xl flex items-center justify-center h-32"
+                    key={partner.name}
+                    className="bg-white p-2 rounded-xl flex items-center justify-center h-32"
                   >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={160}
-                    height={80}
-                    style={{objectFit: "contain"}}
-                    className="max-h-full"
-                  />
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={160}
+                      height={80}
+                      style={{ objectFit: "contain" }}
+                      className="max-h-full"
+                    />
                   </div>
                 ))}
               </div>
@@ -53,17 +54,17 @@ const CTA = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {IndustryPartners.map((partner, index) => (
                   <div
-                  key={partner.name}
-                  className="bg-white p-2 rounded-xl flex items-center justify-center h-32"
+                    key={partner.name}
+                    className="bg-white p-2 rounded-xl flex items-center justify-center h-32"
                   >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={160}
-                    height={80}
-                    style={{ objectFit: "contain" }}
-                    className="max-h-full"
-                  />
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={160}
+                      height={80}
+                      style={{ objectFit: "contain" }}
+                      className="max-h-full"
+                    />
                   </div>
                 ))}
               </div>
@@ -82,12 +83,17 @@ const CTA = () => {
             Join us for an unforgettable weekend of innovation, learning, and
             collaboration. Registration closes on February 28, 2025.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-orange-600 hover:bg-orange-50"
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"
+            target="_blank"
           >
-            Register Your Team Now
-          </Button>
+            <Button
+              size="lg"
+              className="bg-white text-orange-600 hover:bg-orange-50 cursor-pointer"
+            >
+              Register Your Team Now
+            </Button>
+          </Link>
         </div>
       </section>
     </>

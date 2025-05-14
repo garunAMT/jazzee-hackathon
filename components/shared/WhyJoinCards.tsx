@@ -1,21 +1,21 @@
 "use client";
 
-import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+import { Box, Lock, Search, Globe, Network, BrainCircuit, Settings, Sparkles } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export function WhyJoinCards() {
   return (
-    <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 px-10 py-12">
+    <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 px-4 py-4">
       <GridItem
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-        icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Network className="h-4 w-4 text-black dark:text-neutral-400" />}
         title=" Mentorship & Internship"
         description="Get guidance from industry experts and potential internship opportunities with leading companies"
       />
 
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-        icon={<Settings className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Globe className="h-4 w-4 text-black dark:text-neutral-400" />}
         title="Real World Impact"
         description="Create solutions that address real-world challenges and make a meaningful difference"
       />
@@ -38,7 +38,7 @@ export function WhyJoinCards() {
 
       <GridItem
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-        icon={<Search className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<BrainCircuit className="h-4 w-4 text-black dark:text-neutral-400" />}
         title=" Skill Development"
         description="Enhance your technical, problem-solving, and teamwork abilities"
       />
@@ -56,7 +56,7 @@ interface GridItemProps {
 const GridItem = ({ area, icon, title, description }: GridItemProps) => {
   return (
     <li className={`min-h-[14rem] list-none ${area}`}>
-      <div className="relative h-full rounded-2xl border-2 p-2 md:rounded-3xl md:p-3">
+      <div className="relative h-full rounded-2xl border-2 border-orange-100 p-2 md:rounded-3xl md:p-3 bg-orange-50">
         <GlowingEffect
           blur={0}
           borderWidth={3}

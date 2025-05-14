@@ -57,11 +57,12 @@ const Footer = () => {
               <h4 className="font-bold text-white mb-4">Contact</h4>
               <p className="text-sm mb-2 text-orange-500">Jazzee Technologies</p>
               <p className="text-sm mb-2">Bhubaneswar, India</p>
-              <p className="text-sm">info@genaihackathon.com</p>
+              <p className="text-sm mb-2">tdo@jazzee.ai</p>
+              <p className="text-sm">+91 9911024979</p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-            &copy; {new Date().getFullYear()} GENAI HACKATHON T$O. All rights reserved.
+            &copy; {new Date().getFullYear()} GenAI Hackathon T$O. All Rights Reserved.
           </div>
         </div>
       </footer>
