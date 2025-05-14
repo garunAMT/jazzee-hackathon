@@ -4,7 +4,7 @@ import {
   Clock,
   Users,
   Trophy,
-  GraduationCap,
+  // GraduationCap,
   Lightbulb,
 } from "lucide-react";
 import { Button } from "../ui/button";

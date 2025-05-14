@@ -1,7 +1,5 @@
-import Footer from "@/components/shared/Footer"
 import Hero from "@/components/shared/Hero"
 import CTA from "@/components/shared/CTA"
-import { NavigationBar } from "@/components/shared/Navbar"
 import { CompetitionSettings } from "@/components/shared/CompetitionSettings"
 import { UseCases } from "@/components/shared/UseCases"
 import { Venue } from "@/components/shared/Venue"

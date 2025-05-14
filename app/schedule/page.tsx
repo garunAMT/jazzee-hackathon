@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Clock, CheckCircle, XCircle, FileSearch, Building, AlertCircle, Calendar, LucideIcon } from "lucide-react"
+import { Clock, CheckCircle, XCircle, FileSearch, Building, AlertCircle, LucideIcon } from "lucide-react"
 import { ReactNode } from "react"
 
 type TimelineSubItem = {
