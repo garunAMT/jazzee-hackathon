@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Lock, Search, Globe, Network, BrainCircuit, Settings, Sparkles } from "lucide-react";
+import { Lock, Globe, Network, BrainCircuit, Sparkles } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export function WhyJoinCards() {
