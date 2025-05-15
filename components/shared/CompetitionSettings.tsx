@@ -25,7 +25,7 @@ export function CompetitionSettings() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
-                <span>Registration fee: ₹1,000 per team</span>
+                <span>Registration fee: ₹500 per person</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>

@@ -40,7 +40,7 @@ export default function FAQsPage() {
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 pt-2 text-gray-600">
                     <p>
-                      The registration fee is ₹1,000 per team, regardless of team size. This fee covers participation,
+                      The registration fee is <b>₹500 per person</b>. This fee covers participation,
                       meals during the event, access to workshops, mentorship, and a welcome kit for each team member.
                     </p>
                   </AccordionContent>

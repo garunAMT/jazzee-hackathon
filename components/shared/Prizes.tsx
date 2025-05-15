@@ -8,7 +8,7 @@ export function Prizes() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Prizes & Rewards</h2>
           <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-500">
-            Compete for a total prize pool of ₹5,00,000 along with internship opportunities, cloud credits, and more!
+            Compete for a total prize pool of ₹1,00,000 along with internship opportunities, cloud credits, and more!
           </p>
         </div>
 

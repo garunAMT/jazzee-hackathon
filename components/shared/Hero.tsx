@@ -52,7 +52,7 @@ const Hero = () => {
                 "https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"
               }
             >
-              <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 cursor-pointer">
                 Register Now
               </Button>
             </Link>
@@ -60,7 +60,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-50"
+                className="border-orange-500 text-orange-500 hover:bg-orange-50 hover:text-orange-600 cursor-pointer"
               >
                 Learn More
               </Button>
@@ -120,7 +120,7 @@ const Hero = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Prizes</h3>
               <p className="text-gray-600">
-                ₹5,00,000 prize pool, including ₹2,00,000 for the winning team,
+                ₹1,50,000 prize pool, including ₹1,00,000 for the winning team,
                 cloud credits, mentorship opportunities, and internship
                 placements.
               </p>
