@@ -6,11 +6,10 @@ import { Venue } from "@/components/shared/Venue"
 import Judges from "@/components/shared/Judges"
 import { Prizes } from "@/components/shared/Prizes"
 
+
 export default function HackathonLanding() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <NavigationBar /> */}
-
       <main className="flex-1">
         <Hero />
       </main>
@@ -20,7 +19,6 @@ export default function HackathonLanding() {
       <UseCases />
       <Venue />
       <CTA />
-      {/* <Footer /> */}
     </div>
   )
 }
