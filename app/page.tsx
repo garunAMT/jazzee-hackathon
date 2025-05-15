@@ -4,6 +4,7 @@ import { CompetitionSettings } from "@/components/shared/CompetitionSettings"
 import { UseCases } from "@/components/shared/UseCases"
 import { Venue } from "@/components/shared/Venue"
 import Judges from "@/components/shared/Judges"
+import { Prizes } from "@/components/shared/Prizes"
 
 export default function HackathonLanding() {
   return (
@@ -14,6 +15,7 @@ export default function HackathonLanding() {
         <Hero />
       </main>
       <CompetitionSettings />
+      <Prizes />
       <Judges />
       <UseCases />
       <Venue />

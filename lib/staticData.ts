@@ -1,110 +1,148 @@
 export const JudgeDetails = [
-    {
-        id: 1,
-        name: "Sandeep Kadam",
-        post: "CTO",
-        company: "Kissht",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215136/1708429065629_hupinw.jpg",
-        linkedin: ""
-    },
-    {
-        id: 2,
-        name: "Namrata Barpanda",
-        post: "Staff Security Engineer",
-        company: "ServiceNow",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747217527/349050-800x1000_t61rw4.jpg",
-        linkedin: ""
-    },
-    {
-        id: 3,
-        name: "Sumedh Barde",
-        post: "CPO",
-        company: "Simbian",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215228/image_b1qzvc.png",
-        linkedin: ""
-    },
-    {
-        id: 4,
-        name: "Shadab Siddiqui",
-        post: "CISO",
-        company: "JioHotstar",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215346/Shadab-Siddiqui_j5hpez.jpg",
-        linkedin: ""
-    },
-    {
-        id: 5,
-        name: "Pratyush Choudhary",
-        post: "Principal",
-        company: "TogetherFund",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215414/pratyush_mopodk.jpg",
-        linkedin: ""
-    },
-    {
-        id: 6,
-        name: "Mohit Soni",
-        post: "CEO",
-        company: "TNSQ AI",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215469/1615797992148_pvfe6x.jpg",
-        linkedin: ""
-    },
-    {
-        id: 7,
-        name: "Arbind Lochan",
-        post: "Head of Growth – Data Science",
-        company: "Grab",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747213209/arbind_lochan_ohemim.png",
-        linkedin: ""
-    },
-    {
-        id: 8,
-        name: "Shreyas Kumar",
-        post: "Professor of Practice",
-        company: "Texas A&M",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215838/kumar-shreyas-profile-pic-14nov2024_pf1zjb.jpg",
-        linkedin: ""
-    },
-    {
-        id: 9,
-        name: "Varun Bhatt",
-        post: "Independent Consultant",
-        company: "",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216643/1745913368129_n9jinh.jpg",
-        linkedin: ""
-    },
-    {
-        id: 10,
-        name: "Rajat Dhariwal",
-        post: "Founder and CEO",
-        company: "AI for Good",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216059/109162828_tjkvca.jpg",
-        linkedin: ""
-    },
-    {
-        id: 11,
-        name: "Sandeep Hodkasia",
-        post: "Founder and CEO",
-        company: "AppSecure",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216069/30TwujE1_400x400_li2nox.jpg",
-        linkedin: ""
-    },
-    {
-        id: 12,
-        name: "Ranjan Pradhan",
-        post: "Head of BioTechnology",
-        company: "OUTR",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747213209/Ranjan_Pradhan_untugt.png",
-        linkedin: ""
-    },
-        {
-        id: 13,
-        name: "Udayan Kanade",
-        post: "Founder and CEO",
-        company: "Omnesys Technologies",
-        image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216095/udayan-kanade_tlwbw7.jpg",
-        linkedin: ""
-    },
+  {
+    id: 1,
+    name: "Sandeep Kadam",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215136/1708429065629_hupinw.jpg",
+    currentPosition: "CTO",
+    company: "Kissht",
+    pastPositions: ["Chief Technology Officer, Alba Bank", "Chief Technology Officer, Dhani", "Head of Engineering, Eular Systems", "VP Engineering, Saavn"],
+    education: ["B.E. Computer Science, Maharashtra Institute of Technology", "MS Computer Science, University of Southern California"],
+    expertise: [],
+    linkedIn: ""
+  },
+  {
+    id: 2,
+    name: "Namrata Barpanda",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747217527/349050-800x1000_t61rw4.jpg",
+    currentPosition: "Staff Security Engineer",
+    company: "ServiceNow",
+    pastPositions: ["Senior member, IEEE", "Assistant Researcher, Texas A&M Engineering Experiment Station"],
+    education: ["MTech, Computer & System Architecture, Birla Institute of Technology & Science, Pilani", "Texas A&M University"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/namrata-barpanda-0a9750a9/"
+  },
+  {
+    id: 3,
+    name: "Sumedh Barde",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747297474/download_kgbdmg.jpg",
+    currentPosition: "CPO",
+    company: "Simbian",
+    pastPositions: ["Director - Security Programs, Meta", "Group Product Manager - Cloud Security, Microsoft"],
+    education: ["BTech, Computer Science & Engineering, IIT Bombay", "MS, Computer Science, University of North Carolina at Chapel Hill"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/sumedhbarde/"
+  },
+  {
+    id: 4,
+    name: "Shadab Siddiqui",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215346/Shadab-Siddiqui_j5hpez.jpg",
+    currentPosition: "CISO",
+    company: "JioHotstar",
+    pastPositions: ["Head of Information Security, Director, Ola", "Security Engineer, Adobe EchoSign"],
+    education: ["BTech, Computer Science, SRMCEM"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/shadabsidd/"
+  },
+  {
+    id: 5,
+    name: "Pratyush Choudhary",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215414/pratyush_mopodk.jpg",
+    currentPosition: "Principal",
+    company: "TogetherFund",
+    pastPositions: ["Solutions Architect, Amazon Web Services"],
+    education: ["BTech and MTech, Bioengineering & Biomedical Engineering, IIT BHU"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/177pc/"
+  },
+  {
+    id: 6,
+    name: "Mohit Soni",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215469/1615797992148_pvfe6x.jpg",
+    currentPosition: "CEO",
+    company: "TNSQ AI",
+    pastPositions: ["Director, Soni Hospitals Pvt Ltd", "Hardware Engineer, NVIDIA"],
+    education: ["BTech, Electrical Engineering, IIT Bombay", "MTech, Communications and Signal Processing, IIT Bombay"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/mohitsoni/"
+  },
+  {
+    id: 7,
+    name: "Arbind Lochan",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747213209/arbind_lochan_ohemim.png",
+    currentPosition: "Head of Growth – Data Science",
+    company: "Grab",
+    pastPositions: ["Head of Marketing Analytics - APAC, Uber", "Head of Marketing Analytics and Data Strategy- APAC Life cycle Marketing, PayPal"],
+    education: ["Doctor of Business Administration, Golden Gate University", "Stanford University Graduate School of Business"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/arbind-lochan"
+  },
+  {
+    id: 8,
+    name: "Shreyas Kumar",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747215838/kumar-shreyas-profile-pic-14nov2024_pf1zjb.jpg",
+    currentPosition: "Professor of Practice",
+    company: "Texas A&M",
+    pastPositions: ["Member, FBI Infragard", "San Francisco Economic Crime Task Force Partner"],
+    education: ["Master of Legal Studies, Cybersecurity Law & Policy, Texas A&M University", "PhD (ongoing), Computer Science and Engineering, Texas A&M University"],
+    expertise: [],
+    linkedIn: ""
+  },
+  {
+    id: 9,
+    name: "Varun Bhatt",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216643/1745913368129_n9jinh.jpg",
+    currentPosition: "Independent Consultant",
+    company: "",
+    pastPositions: ["Senior Curriculam Lead, Masai School", "Software engineer, Electroic Arts"],
+    education: ["MTech, Computer Science, International Institute of Information Technology, Hyderabad"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/varunbhtt21/"
+  },
+  {
+    id: 10,
+    name: "Rajat Dhariwal",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216059/109162828_tjkvca.jpg",
+    currentPosition: "Founder and CEO",
+    company: "AI for Good",
+    pastPositions: ["Co-Founder, SLAM Labs", "SVP Curriculum, Massai", "CPO"],
+    education: ["MS, Electrical and Conputer Engineering, Carnegie Mellon University", "B.Tech, Computer Science, IIT Bombay"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/rajatdhariwal/"
+  },
+  {
+    id: 11,
+    name: "Sandeep Hodkasia",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216069/30TwujE1_400x400_li2nox.jpg",
+    currentPosition: "Founder and CEO",
+    company: "AppSecure",
+    pastPositions: ["Founder and CEO, Pentabug"],
+    education: ["BTech, Computer Science, Jaypee Institute of Information Technology, Noida"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/sandeephodkasia"
+  },
+  {
+    id: 12,
+    name: "Ranjan Pradhan",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747213209/Ranjan_Pradhan_untugt.png",
+    currentPosition: "Head of BioTechnology",
+    company: "OUTR",
+    pastPositions: ["Associate Professor, Biju Pattnaik University of Technology", "Research Investigator, University of Michigan"],
+    education: [],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/ranjan-pradhan-89837a258"
+  },
+  {
+    id: 13,
+    name: "Udayan Kanade",
+    image: "https://res.cloudinary.com/dtipcangs/image/upload/v1747216095/udayan-kanade_tlwbw7.jpg",
+    currentPosition: "Founder and CEO",
+    company: "Omnesys Technologies",
+    pastPositions: ["CEO, Oneirix Labs", "CEO, Noumenon Multiphysics"],
+    education: ["BE, Computer Engineering, Savitribai Phule Pune University", "MS, Computer Science, Stanford university"],
+    expertise: [],
+    linkedIn: "https://www.linkedin.com/in/udayankanade/"
+  }
 ];
-
 
 export const AcademicPartners = [
     {

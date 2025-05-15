@@ -22,16 +22,16 @@ export function Venue() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium">Tech Innovation Center</p>
-                    <p className="text-gray-600">123 Innovation Street, Koramangala</p>
-                    <p className="text-gray-600">Bangalore, Karnataka 560034</p>
+                    <p className="font-medium">Ratnagiri Hall of Learning</p>
+                    <p className="text-gray-600">IIT Bhubaneswar</p>
+                    <p className="text-gray-600">Khurda, Odisha 752050</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Calendar className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium">Date</p>
-                    <p className="text-gray-600">March 15-17, 2025</p>
+                    <p className="text-gray-600">July 10-12, 2025</p>
                   </div>
                 </div>
                 <a
@@ -66,16 +66,16 @@ export function Venue() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium">Grand Convention Center</p>
-                    <p className="text-gray-600">456 Conference Avenue, Whitefield</p>
-                    <p className="text-gray-600">Bangalore, Karnataka 560066</p>
+                    <p className="font-medium">Odisha University of Technology & Research</p>
+                    <p className="text-gray-600">Kalinga Nagar, Ghatikia</p>
+                    <p className="text-gray-600">Bhubaneswar, Odisha 751003</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Calendar className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium">Date</p>
-                    <p className="text-gray-600">March 17, 2025</p>
+                    <p className="text-gray-600">July 12, 2025</p>
                   </div>
                 </div>
                 <a

@@ -81,7 +81,7 @@ const CTA = () => {
           </h2>
           <p className="max-w-2xl mx-auto mb-8 text-orange-50">
             Join us for an unforgettable weekend of innovation, learning, and
-            collaboration. Registration closes on February 28, 2025.
+            collaboration. Registration closes on May 31, 2025.
           </p>
           <Link
             href="https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"
