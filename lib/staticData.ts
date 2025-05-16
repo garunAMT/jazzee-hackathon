@@ -160,16 +160,16 @@ export const AcademicPartners = [
         name: "OUTR",
         logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747371461/Odisha_University_of_Technology_and_Research_Logo_femrbf.png",
     },
-    {
-      id: 4,
-      name: "Newton School of Technology",
-      logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747370757/20250409174004_xit5hh.jpg",
-    },
-    {
-      id: 5,
-      name: "ITER SOA",
-      logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747371222/Siksha__E2_80_98O_E2_80_99_Anusandhan_ekxhbf.png",
-    }
+    // {
+    //   id: 4,
+    //   name: "Newton School of Technology",
+    //   logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747370757/20250409174004_xit5hh.jpg",
+    // },
+    // {
+    //   id: 5,
+    //   name: "ITER SOA",
+    //   logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747371222/Siksha__E2_80_98O_E2_80_99_Anusandhan_ekxhbf.png",
+    // }
 ]
 
 export const IndustryPartners = [
