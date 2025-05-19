@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { AcademicPartners, IndustryPartners } from "@/lib/staticData";
 import Link from "next/link";
+import RegisterButton from "./RegisterButton";
 
 const CTA = () => {
   return (
@@ -83,17 +84,11 @@ const CTA = () => {
             Join us for an unforgettable weekend of innovation, learning, and
             collaboration. Registration closes on May 31, 2025.
           </p>
-          <Link
-            href="https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"
-            target="_blank"
-          >
-            <Button
-              size="lg"
-              className="bg-white text-orange-600 hover:bg-orange-50 cursor-pointer"
-            >
-              Register Your Team Now
-            </Button>
-          </Link>
+
+          <RegisterButton
+            text="Register Your Team Now"
+            className="bg-white text-orange-600 hover:bg-orange-50 px-6 py-3 rounded-md  transition duration-200 cursor-pointer"
+          />
         </div>
       </section>
     </>

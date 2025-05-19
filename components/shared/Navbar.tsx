@@ -11,6 +11,7 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import RegisterButton from "./RegisterButton";
 
 export function NavigationBar() {
   const navItems = [
@@ -43,7 +44,8 @@ export function NavigationBar() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton as={"a"} href={"https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"} target="_blank" variant="primary" className="bg-orange-500 text-white">Register</NavbarButton>
+            {/* <NavbarButton as={"a"} href={"https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"} target="_blank" variant="primary" className="bg-orange-500 text-white">Register</NavbarButton> */}
+            <RegisterButton text="Register" className="bg-orange-500 text-white hover:bg-orange-600 rounded-md cursor-pointer text-sm font-bold relative hover:-translate-y-0.5 transition duration-200" />
           </div>
         </NavBody>
 
@@ -72,7 +74,7 @@ export function NavigationBar() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <NavbarButton
+              {/* <NavbarButton
               as={"a"}
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -81,7 +83,8 @@ export function NavigationBar() {
                 className="w-full bg-orange-500 text-white"
               >
                 Register
-              </NavbarButton>
+              </NavbarButton> */}
+              <RegisterButton text="Register" className="bg-orange-500 text-white hover:bg-orange-600 px-4 py-2 rounded-md button text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center" />
               {/* <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"

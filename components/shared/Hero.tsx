@@ -10,6 +10,7 @@ import {
 import { Button } from "../ui/button";
 import { WhyJoinCards } from "./WhyJoinCards";
 import Link from "next/link";
+import RegisterButton from "./RegisterButton";
 
 const Hero = () => {
   return (
@@ -47,7 +48,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Link
+            {/* <Link
               href={
                 "https://play.google.com/store/apps/details?id=com.jazzeetechnologies.jazzee_edtech&pcampaignid=web_share"
               }
@@ -55,7 +56,8 @@ const Hero = () => {
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 cursor-pointer">
                 Register Now
               </Button>
-            </Link>
+            </Link> */}
+            <RegisterButton text="Register Now" className="bg-orange-500 hover:bg-orange-600 cursor-pointer" />
             <Link href={"#about"}>
               <Button
                 size="lg"
