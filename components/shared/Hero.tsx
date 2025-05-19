@@ -24,14 +24,14 @@ const Hero = () => {
         </div>
 
         <div className="container relative flex flex-col items-center text-center space-y-8">
-          <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-800 mb-4">
+          {/* <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-800 mb-4">
             2025 Edition
-          </div>
+          </div> */}
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-            GENAI HACKATHON <br /> Trillion Dollar Opportunity - 2025
+            GenAI Hackathon <br /> Trillion Dollar Opportunity - 2025
           </h1>
           <p className="text-xl md:text-2xl font-medium text-orange-600">
-            Innovate | Build | Compete
+            Break | Build | Transform
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
@@ -94,7 +94,7 @@ const Hero = () => {
               With access to cutting-edge AI models, cloud resources, and expert
               mentorship, participants will have the opportunity to transform
               their ideas into functional prototypes. The hackathon focuses on
-              practical applications across software development, cybersecurity,
+              practical applications across cybersecurity, healthcare, life sciences,
               and IoT, encouraging cross-disciplinary collaboration and
               innovative thinking. Join us in this exciting journey where you'll
               network with industry leaders, learn from peers, and potentially
@@ -122,7 +122,7 @@ const Hero = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Prizes</h3>
               <p className="text-gray-600">
-                ₹1,50,000 prize pool, including ₹1,00,000 for the winning team,
+                ₹1,50,000 prize pool, including <b>cash prizes</b> worth ₹1,00,000 for the winning team,
                 cloud credits, mentorship opportunities, and internship
                 placements.
               </p>

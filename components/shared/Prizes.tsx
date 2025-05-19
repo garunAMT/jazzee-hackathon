@@ -96,45 +96,45 @@ export function Prizes() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                category: "Software Development",
-                icon: "💻",
-                description: "Best AI solution in software development",
+              category: "Most Innovative Use Case",
+              icon: "💡",
+              description: "Awarded for the most creative and impactful AI solution.",
               },
               {
-                category: "Cybersecurity",
-                icon: "🔒",
-                description: "Best AI solution in cybersecurity",
+              category: "Best Technical Implementation",
+              icon: "🛠️",
+              description: "Recognizing the most robust and technically impressive project.",
               },
               {
-                category: "Internet of Things (IoT)",
-                icon: "🌐",
-                description: "Best AI solution in IoT",
+              category: "Best UI/UX Design",
+              icon: "🎨",
+              description: "For the project with the most user-friendly and attractive interface.",
               },
               {
-                category: "Healthcare & Medical AI",
-                icon: "🏥",
-                description: "Best AI solution in healthcare",
+              category: "Best Team Collaboration",
+              icon: "🤝",
+              description: "For outstanding teamwork and collaboration throughout the hackathon.",
               },
               {
-                category: "Sustainable AI",
-                icon: "🌱",
-                description: "Best AI solution for sustainability",
+              category: "Best Presentation",
+              icon: "🎤",
+              description: "For the clearest and most compelling project presentation.",
               },
               {
-                category: "Financial Crime",
-                icon: "💰",
-                description: "Best AI solution for financial crime prevention",
+              category: "People's Choice Award",
+              icon: "🏆",
+              description: "Voted as the favorite project by participants and audience.",
               },
             ].map((category, index) => (
               <div key={index} className="bg-orange-50 rounded-xl p-6 text-center shadow-sm">
-                <div className="text-3xl mb-4">{category.icon}</div>
-                <h4 className="text-xl font-bold mb-2">{category.category}</h4>
-                <div className="text-2xl font-bold text-orange-600 mb-3">₹2,000</div>
-                <p className="text-gray-600 mb-4">{category.description}</p>
-                <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
-                  <Gift className="h-4 w-4" />
-                  <span>+ Certificate & Recognition</span>
-                </div>
+              <div className="text-3xl mb-4">{category.icon}</div>
+              <h4 className="text-xl font-bold mb-2">{category.category}</h4>
+              <div className="text-2xl font-bold text-orange-600 mb-3">₹2,000</div>
+              <p className="text-gray-600 mb-4">{category.description}</p>
+              <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
+                <Gift className="h-4 w-4" />
+                <span>+ Certificate & Recognition</span>
+              </div>
               </div>
             ))}
           </div>

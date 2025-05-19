@@ -33,7 +33,7 @@ export function WhyJoinCards() {
         area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
         icon={<Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />}
         title="Transdisciplinary Opportunity"
-        description="Collaborate across disciplines and expand your perspective in the field of AI"
+        description="Collaborate across disciplines and expand your perspective in the field of Generative AI"
       />
 
       <GridItem
