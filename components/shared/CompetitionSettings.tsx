@@ -25,7 +25,15 @@ export function CompetitionSettings() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
-                <span>Registration fee: ₹500 per person</span>
+                <span>Registration fee: ₹1000 for 2 members</span>
+              </li>
+                            <li className="flex items-start gap-2">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Registration fee: ₹1200 for 3 members</span>
+              </li>
+                            <li className="flex items-start gap-2">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Registration fee: ₹1400 for 4 members</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
@@ -94,10 +102,10 @@ export function CompetitionSettings() {
               <h3 className="text-xl font-bold">Resources</h3>
             </div>
             <ul className="space-y-2 text-gray-600">
-              <li className="flex items-start gap-2">
+              {/* <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
                 <span>Free cloud credits for all participants</span>
-              </li>
+              </li> */}
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
                 <span>Access to premium AI APIs and tools</span>
