@@ -42,13 +42,13 @@ const Footer = () => {
             <div>
               <h4 className="font-bold text-white mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <Link href="#" className="hover:text-orange-400">
+                {/* <Link href="#" className="hover:text-orange-400">
                   Twitter
-                </Link>
-                <Link href="#" className="hover:text-orange-400">
+                </Link> */}
+                <Link href="https://www.linkedin.com/in/jazzee-technologies-2393a0357/" target='_blank' className="hover:text-orange-400">
                   LinkedIn
                 </Link>
-                <Link href="#" className="hover:text-orange-400">
+                <Link href="https://www.instagram.com/jazzee_technologies?igsh=MTkzbThrM3cxcHFmdg==" target='_blank' className="hover:text-orange-400">
                   Instagram
                 </Link>
               </div>

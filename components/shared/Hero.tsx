@@ -80,26 +80,10 @@ const Hero = () => {
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto text-gray-500">
-              Welcome to T$O 2025, a premier GENAI Hackathon that brings
-              together the brightest minds in artificial intelligence and
-              technology. This 48-hour innovation marathon challenges
-              participants to harness the power of generative AI to create
-              groundbreaking solutions that address real-world problems. Whether
-              you're a seasoned AI developer, a creative problem solver, or an
-              innovative thinker, this hackathon provides the perfect platform
-              to showcase your skills and push the boundaries of what's possible
-              with AI.
+              Welcome to Trillion Doller Opportunity (T$O)—a global jam session of ideas, hosted by Jazzee, the rule-breaking virtuoso of generative AI. Just like jazz, Jazzee doesn&apos;t follow the script—it riffs, experiments, and improvises its way into the future. 
             </p>
             <p className="max-w-3xl mx-auto text-gray-500">
-              With access to cutting-edge AI models, cloud resources, and expert
-              mentorship, participants will have the opportunity to transform
-              their ideas into functional prototypes. The hackathon focuses on
-              practical applications across cybersecurity, healthcare, life sciences,
-              and IoT, encouraging cross-disciplinary collaboration and
-              innovative thinking. Join us in this exciting journey where you'll
-              network with industry leaders, learn from peers, and potentially
-              kickstart your career in the rapidly evolving field of generative
-              AI.
+              T$O invites students from every corner of the world to sync up and swing into action, tackling real-world challenges in cybersecurity, education, healthcare, life sciences, and IoT. It&apos;s not just a hackathon—it&apos;s a stage where bold minds collaborate, improvise, and compose solutions with trillion-dollar potential. At Jazzee, we don&apos;t just play the notes—we change the tune.
             </p>
           </div>
 

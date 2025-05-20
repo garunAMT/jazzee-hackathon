@@ -85,7 +85,7 @@ export function AnnouncementBanner() {
           <div className="hidden md:block">|</div>
 
           <div>
-            <span>Register now to secure your spot!</span>
+            <span>Download Jazzee EdTech app to register</span>
           </div>
         </div>
 
