@@ -13,7 +13,7 @@ export default function HackathonLanding() {
       <main className="flex-1">
         <Hero />
       </main>
-      <CompetitionSettings />
+      {/* <CompetitionSettings /> */}
       <Prizes />
       <Judges />
       <UseCases />
