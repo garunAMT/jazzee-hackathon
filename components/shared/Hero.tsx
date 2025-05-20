@@ -128,7 +128,7 @@ const Hero = () => {
       </section>
 
       {/* Why Participate Section */}
-      <section id="why" className="py-16 md:py-24 bg-orange-50 px-10">
+      <section id="why" className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-orange-600">
@@ -136,7 +136,7 @@ const Hero = () => {
             </h2>
           </div>
 
-          <div className="border border-orange-200 rounded-xl p-8 bg-white mb-12">
+          <div className="py-8 bg-white mb-8 px-10">
             <WhyJoinCards />
           </div>
         </div>
