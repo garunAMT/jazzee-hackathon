@@ -106,7 +106,7 @@ const Hero = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Prizes</h3>
               <p className="text-gray-600">
-                ₹1,50,000 prize pool, including <b>cash prizes</b> worth ₹1,00,000 for the winning team,
+                ₹1,12,000 prize pool, including <b>cash prizes</b> worth ₹1,00,000 for the winning team,
                 cloud credits, mentorship opportunities, and internship
                 placements.
               </p>
