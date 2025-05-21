@@ -57,7 +57,7 @@ const Hero = () => {
                 Register Now
               </Button>
             </Link> */}
-            <RegisterButton text="Register Now" className="bg-orange-500 hover:bg-orange-600 cursor-pointer" />
+            <RegisterButton text="Download App" className="bg-orange-500 hover:bg-orange-600 cursor-pointer" />
             <Link href={"#about"}>
               <Button
                 size="lg"
@@ -67,6 +67,7 @@ const Hero = () => {
                 Learn More
               </Button>
             </Link>
+            
           </div>
         </div>
       </section>
@@ -106,8 +107,8 @@ const Hero = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Prizes</h3>
               <p className="text-gray-600">
-                ₹1,12,000 prize pool, including <b>cash prizes</b> worth ₹1,00,000 for the winning team,
-                cloud credits, mentorship opportunities, and internship
+                ₹1,12,000 prize pool, including <b>cash prizes</b> worth ₹1,00,000 for the winning teams,
+                mentorship opportunities, and internship,
                 placements.
               </p>
             </div>
