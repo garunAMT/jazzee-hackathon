@@ -69,6 +69,9 @@ const Hero = () => {
             </Link>
             
           </div>
+          <div className="text-xs -mt-4">
+            <span>* Download the Jazzee EdTech app to proceed with registration.</span>
+          </div>
         </div>
       </section>
 
