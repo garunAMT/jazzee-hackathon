@@ -133,12 +133,12 @@ export default function FAQsPage() {
                     <span className="text-left font-medium">What are the prizes for the winners?</span>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 pt-2 text-gray-600">
-                    <p>The total prize pool is ₹5,00,000, distributed as follows:</p>
+                    <p>The total prize pool is ₹1,12,000, distributed as follows:</p>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1st Place: ₹2,00,000 + Internship opportunities</li>
-                      <li>2nd Place: ₹1,00,000 + Cloud credits</li>
-                      <li>3rd Place: ₹50,000 + Cloud credits</li>
-                      <li>Category Winners: ₹25,000 each for best projects in each category</li>
+                      <li>1st Place: ₹50,000 + Internship opportunities</li>
+                      <li>2nd Place: ₹30,000 + Cloud credits</li>
+                      <li>3rd Place: ₹20,000 + Cloud credits</li>
+                      <li>Category Winners: ₹2,000 each for best projects in each category</li>
                     </ul>
                   </AccordionContent>
                 </AccordionItem>

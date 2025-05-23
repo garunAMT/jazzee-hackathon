@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <Calendar className="h-5 w-5 text-orange-500" />
-              <span>July 10-12, 2025</span>
+              <span>July 3-5, 2025</span>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <MapPin className="h-5 w-5 text-orange-500" />
@@ -98,9 +98,7 @@ const Hero = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Who Can Participate</h3>
               <p className="text-gray-600">
-                Open to students, professionals, and AI enthusiasts of all skill
-                levels. Form teams of 2-4 members and bring your innovative
-                ideas to life.
+                Open to students of all levels, professionals, and AI enthusiasts. Form teams of 2–4 and bring your innovative ideas to life!
               </p>
             </div>
 

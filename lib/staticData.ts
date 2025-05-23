@@ -228,11 +228,11 @@ export const AcademicPartners = [
     name: "OUTR FINE",
     logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747213442/outr-fine_mxwej7.jpg",
   },
-  {
-    id: 3,
-    name: "OUTR",
-    logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747371461/Odisha_University_of_Technology_and_Research_Logo_femrbf.png",
-  },
+  // {
+  //   id: 3,
+  //   name: "OUTR",
+  //   logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747371461/Odisha_University_of_Technology_and_Research_Logo_femrbf.png",
+  // },
   // {
   //   id: 4,
   //   name: "Newton School of Technology",

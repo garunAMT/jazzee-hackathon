@@ -218,7 +218,7 @@ export default function ResultsPage() {
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Results Coming Soon!</h2>
                 <p className="text-gray-600 mb-8">
                   Our judges are currently evaluating all the amazing projects submitted during the hackathon. Results
-                  will be announced on July 12, 2025.
+                  will be announced on July 5, 2025.
                 </p>
                 {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button className="bg-orange-500 hover:bg-orange-600">Get Notified When Results Are Out</Button>
