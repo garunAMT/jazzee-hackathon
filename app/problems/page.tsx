@@ -1,214 +1,177 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Clock, Users, Trophy, Lightbulb } from "lucide-react"
+import { Clock, Users, Trophy, Lightbulb, Palette, Phone, Heart, GraduationCap } from "lucide-react"
 
-const categories = [
-  "All Categories",
-  "Healthcare & Medical AI",
-  "Sustainable AI",
-  "Cybersecurity",
-  "Financial Crime",
-  "Software Development",
-  "Internet of Things",
-]
+const categories = ["All Challenges", "Design & UX", "Voice AI", "Healthcare", "Education"]
 
 const problemStatements = [
   {
     id: 1,
-    title: "AI-Powered Medical Diagnosis Assistant",
-    category: "Healthcare & Medical AI",
-    author: "Dr. Sarah Chen, Medical AI Research Lead",
-    difficulty: "Advanced",
-    timeEstimate: "36-48 hours",
-    teamSize: "3-4 members",
-    description:
-      "Develop an AI system that can assist healthcare professionals in diagnosing diseases from medical images such as X-rays, CT scans, or MRIs. The system should be able to identify potential abnormalities and provide confidence scores for its predictions.",
-    detailedDescription:
-      "Medical diagnosis is one of the most critical applications of AI in healthcare. Your challenge is to create a robust system that can analyze medical imaging data and provide accurate diagnostic suggestions. The system should handle multiple types of medical images and provide explanations for its decisions to help doctors understand the AI's reasoning.",
-    requirements: [
-      "Support for at least 2 types of medical images (X-ray, CT, MRI)",
-      "Confidence scoring for predictions",
-      "Explainable AI features to show reasoning",
-      "User-friendly interface for medical professionals",
-      "Data privacy and security considerations",
+    title: "Can You Build Tech That's Not Just Functional—But Beautifully Designed?",
+    category: "Design & UX",
+    icon: <Palette className="h-6 w-6" />,
+    difficulty: "Intermediate",
+    timeEstimate: "24-48 hours",
+    teamSize: "2-4 members",
+    shortDescription:
+      "Building something people actually enjoy using. Focus on creating beautiful, user-friendly experiences that solve real problems.",
+    challenge:
+      "This hackathon isn't just about writing code—it's about building products that are usable, beautiful, and people-friendly.",
+    context:
+      "In today's world, building a working app or website is no longer the hard part. Thanks to AI tools, low-code platforms, and ready-to-use frameworks, anyone can launch a product quickly. But the real challenge? Building something people actually enjoy using. That's where great design makes all the difference.",
+    whyItMatters:
+      "Most Indian engineering students are great at coding—but often ignore design. The result? Apps that work, but are confusing, boring, or hard to use. The most successful tech companies—like Apple, Airbnb, and Stripe—didn't just build powerful tech. They created beautiful, user-friendly experiences.",
+    yourTask: [
+      "Pick a real-world problem",
+      "Build a working solution (web/app/product)",
+      "Pay close attention to design, usability, and user experience",
     ],
-    resources: [
-      "Access to anonymized medical imaging datasets",
-      "Pre-trained medical AI models",
-      "Cloud computing credits for model training",
-      "Consultation with medical professionals",
+    focusAreas: [
+      "Simple and intuitive interfaces",
+      "Clean layouts with thoughtful visual design",
+      "Features that solve a real user pain point",
+      "Smooth user flows (no clutter, no confusion)",
+      "Bonus: Use AI tools like Figma AI, Framer, or Uizard to boost your design process",
     ],
-    impact: "High - Direct impact on patient care and diagnostic accuracy",
+    impact: "High - Create products that are not only smart but also a joy to use",
   },
   {
     id: 2,
-    title: "Smart Grid Energy Optimization System",
-    category: "Sustainable AI",
-    author: "Prof. Michael Rodriguez, Renewable Energy Institute",
-    difficulty: "Intermediate",
-    timeEstimate: "24-36 hours",
-    teamSize: "2-4 members",
-    description:
-      "Create an AI system that optimizes energy distribution in smart grids by predicting energy demand, managing renewable energy sources, and minimizing waste while ensuring grid stability.",
-    detailedDescription:
-      "As renewable energy sources become more prevalent, managing energy distribution becomes increasingly complex. Your task is to develop an intelligent system that can predict energy demand patterns, optimize the use of renewable sources like solar and wind, and ensure grid stability while minimizing energy waste.",
-    requirements: [
-      "Energy demand prediction algorithms",
-      "Renewable energy source integration",
-      "Real-time grid balancing capabilities",
-      "Cost optimization features",
-      "Scalable architecture for different grid sizes",
+    title: "Can Voice AI Fix Customer Support Calls?",
+    category: "Voice AI",
+    icon: <Phone className="h-6 w-6" />,
+    difficulty: "Advanced",
+    timeEstimate: "30-48 hours",
+    teamSize: "3-4 members",
+    shortDescription:
+      "Use Voice AI and LLMs to revolutionize customer service experiences and eliminate common pain points in support calls.",
+    challenge:
+      "Build a solution that uses Voice AI to improve customer service experiences and make customer calls faster, simpler, and more human.",
+    context:
+      "Think about your last call to a customer care number—maybe your bank, mobile service, food delivery, or hospital. You probably faced long wait times, confusing menu options, or had to repeat your issue multiple times. The experience hasn't changed much in decades, but with new Voice AI and Large Language Models (LLMs), we finally have the chance to fix this.",
+    whyItMatters:
+      "Today's AI voice models can understand natural language, respond with human-like tone and emotion, and hold realistic conversations. With over a trillion customer support calls happening each year worldwide, the opportunity to improve this space is massive—especially in India where phone-based support is still the primary way people reach businesses.",
+    yourTask: [
+      "A smart voice bot for a local business (e.g., pharmacy, clinic, delivery service)",
+      "An AI system that answers FAQs or resolves simple issues over a phone call",
+      "A voice assistant that understands regional Indian languages or accents",
+      "A hybrid system where AI handles the first 2 minutes and then hands off to a human if needed",
     ],
-    resources: [
-      "Historical energy consumption data",
-      "Weather data APIs for renewable predictions",
-      "Smart grid simulation environments",
-      "Energy industry expert mentorship",
+    focusAreas: [
+      "Natural language understanding",
+      "Human-like conversation flow",
+      "Regional language support",
+      "Seamless human handoff",
+      "Real-time voice processing",
     ],
-    impact: "Very High - Contributes to sustainable energy future and carbon reduction",
+    impact: "Very High - Transform customer service for millions of users",
   },
   {
     id: 3,
-    title: "Advanced Phishing Detection and Prevention",
-    category: "Cybersecurity",
-    author: "Alex Thompson, Cybersecurity Specialist",
-    difficulty: "Intermediate",
-    timeEstimate: "20-30 hours",
-    teamSize: "2-3 members",
-    description:
-      "Build an AI-powered system that can detect sophisticated phishing attempts across multiple channels (email, SMS, social media) and provide real-time protection for users.",
-    detailedDescription:
-      "Phishing attacks are becoming increasingly sophisticated, using AI to create convincing fake communications. Your challenge is to develop an equally sophisticated defense system that can identify phishing attempts across various communication channels and protect users in real-time.",
-    requirements: [
-      "Multi-channel phishing detection (email, SMS, web)",
-      "Real-time analysis and blocking capabilities",
-      "Machine learning models for pattern recognition",
-      "User education and awareness features",
-      "Integration with existing security systems",
+    title: "Reducing Healthcare Inefficiencies with AI",
+    category: "Healthcare",
+    icon: <Heart className="h-6 w-6" />,
+    difficulty: "Advanced",
+    timeEstimate: "36-48 hours",
+    teamSize: "3-4 members",
+    shortDescription:
+      "Use AI to automate administrative tasks in healthcare, reducing paperwork burden and improving patient care efficiency.",
+    challenge:
+      "Think about how you can use AI to reduce the paperwork burden in Indian healthcare and make the system more efficient.",
+    context:
+      "India's healthcare system faces major challenges in how healthcare data is handled. From hospitals to clinics to insurance offices, a huge amount of time is spent on manual administrative work: filling out forms by hand, transferring data between systems, digging through patient records stored as PDFs, and manually updating information.",
+    whyItMatters:
+      "These inefficiencies slow down care, waste resources, and often lead to errors. Medical staff spend valuable time doing paperwork instead of treating patients. In the U.S., it's estimated that over $1 trillion is wasted on similar tasks. But today, LLMs and AI tools are making it possible to automate many of these tasks.",
+    yourTask: [
+      "Build a system that reads and extracts patient data from scanned prescriptions or reports",
+      "Help medical staff fill digital records more easily with voice input or chat",
+      "Move information from one hospital software system to another using AI",
+      "Create an assistant that supports health workers in rural areas to enter or retrieve data faster",
     ],
-    resources: [
-      "Phishing email datasets",
-      "URL analysis tools and APIs",
-      "Cybersecurity frameworks and libraries",
-      "Security expert mentorship",
+    focusAreas: [
+      "Document processing and OCR",
+      "Data extraction from unstructured sources",
+      "Voice-to-text for medical records",
+      "System integration and automation",
+      "Rural healthcare support tools",
     ],
-    impact: "High - Protects individuals and organizations from cyber threats",
+    impact: "Very High - Make Indian healthcare more efficient and patient-friendly",
   },
   {
     id: 4,
-    title: "Intelligent Financial Fraud Detection",
-    category: "Financial Crime",
-    author: "Jennifer Liu, FinTech Security Director",
-    difficulty: "Advanced",
-    timeEstimate: "30-40 hours",
-    teamSize: "3-4 members",
-    description:
-      "Develop a real-time fraud detection system that can identify suspicious financial transactions and patterns while minimizing false positives that disrupt legitimate customer activities.",
-    detailedDescription:
-      "Financial fraud costs billions annually and affects millions of people. Your mission is to create an intelligent system that can detect fraudulent activities in real-time while ensuring legitimate transactions are not unnecessarily blocked. The system should learn from new fraud patterns and adapt quickly.",
-    requirements: [
-      "Real-time transaction monitoring",
-      "Pattern recognition for fraud detection",
-      "Low false positive rate optimization",
-      "Adaptive learning capabilities",
-      "Compliance with financial regulations",
-    ],
-    resources: [
-      "Anonymized transaction datasets",
-      "Fraud pattern libraries",
-      "Financial regulation guidelines",
-      "FinTech industry expert guidance",
-    ],
-    impact: "Very High - Protects financial institutions and consumers from fraud",
-  },
-  {
-    id: 5,
-    title: "AI Code Review and Bug Detection Assistant",
-    category: "Software Development",
-    author: "David Park, Senior Software Architect",
+    title: "Build an AI Tutor for Every Indian Student",
+    category: "Education",
+    icon: <GraduationCap className="h-6 w-6" />,
     difficulty: "Intermediate",
-    timeEstimate: "25-35 hours",
+    timeEstimate: "24-36 hours",
     teamSize: "2-4 members",
-    description:
-      "Create an AI assistant that can automatically review code, detect potential bugs, suggest improvements, and ensure code quality standards across different programming languages.",
-    detailedDescription:
-      "Code review is a critical part of software development, but it's time-consuming and can miss subtle bugs. Your challenge is to build an AI system that can understand code context, identify potential issues, and suggest improvements while learning from developer feedback.",
-    requirements: [
-      "Multi-language code analysis support",
-      "Bug detection and classification",
-      "Code quality scoring and suggestions",
-      "Integration with popular development tools",
-      "Learning from developer feedback",
+    shortDescription:
+      "Create personalized AI tutors that adapt to individual learning styles and help students understand complex topics.",
+    challenge:
+      "Build an AI-powered learning tool that can help Indian students understand hard topics in engineering, science, or any other subject.",
+    context:
+      "Engineering students in India face real struggles: huge class sizes with little personal attention, one-size-fits-all lectures, pressure to memorize without understanding, and outdated learning tools. Most online courses still deliver the same content to every student, regardless of their pace or learning style.",
+    whyItMatters:
+      "For decades, computer scientists have dreamed of using technology to revolutionize learning. That dream is finally possible with today's AI. With the latest LLMs and multimodal AI tools, we can now build AI tutors that adapt to each student's pace, break down tough topics step by step, and answer follow-up questions like a real teacher would.",
+    yourTask: [
+      "Create visual explanations for complex ideas",
+      "Let students interact with concepts (e.g., manipulate 3D objects or ask questions)",
+      "Support multiple Indian languages to make learning inclusive",
+      "Help students learn at their own pace with a personalized AI tutor",
     ],
-    resources: [
-      "Open source code repositories",
-      "Bug tracking databases",
-      "Code analysis tools and APIs",
-      "Software development expert mentorship",
+    focusAreas: [
+      "Personalized learning algorithms",
+      "Interactive visualizations",
+      "Multi-language support",
+      "Adaptive content delivery",
+      "Student progress tracking",
     ],
-    impact: "High - Improves software quality and developer productivity",
-  },
-  {
-    id: 6,
-    title: "Smart IoT Device Security Monitor",
-    category: "Internet of Things",
-    author: "Dr. Emily Watson, IoT Security Researcher",
-    difficulty: "Advanced",
-    timeEstimate: "35-45 hours",
-    teamSize: "3-4 members",
-    description:
-      "Build an AI system that monitors IoT device networks for security vulnerabilities, unusual behavior patterns, and potential cyber attacks while maintaining device functionality.",
-    detailedDescription:
-      "IoT devices are often vulnerable to cyber attacks due to weak security implementations. Your task is to create an intelligent monitoring system that can oversee IoT networks, detect anomalies, and respond to security threats without disrupting normal device operations.",
-    requirements: [
-      "IoT device behavior analysis",
-      "Anomaly detection algorithms",
-      "Network traffic monitoring",
-      "Automated threat response",
-      "Device compatibility across different IoT protocols",
-    ],
-    resources: [
-      "IoT device simulation environments",
-      "Network traffic datasets",
-      "IoT security frameworks",
-      "IoT security expert consultation",
-    ],
-    impact: "High - Secures critical IoT infrastructure and smart city systems",
+    impact: "Very High - Transform education for millions of Indian students",
   },
 ]
 
 export default function ProblemsPage() {
-  const [activeCategory, setActiveCategory] = useState("All Categories")
+  const [activeCategory, setActiveCategory] = useState("All Challenges")
 
   const filteredProblems =
-    activeCategory === "All Categories"
+    activeCategory === "All Challenges"
       ? problemStatements
       : problemStatements.filter((problem) => problem.category === activeCategory)
+
+  const getDifficultyColor = (difficulty: string) => {
+    switch (difficulty) {
+      case "Advanced":
+        return "bg-red-100 text-red-800"
+      case "Intermediate":
+        return "bg-yellow-100 text-yellow-800"
+      default:
+        return "bg-green-100 text-green-800"
+    }
+  }
 
   return (
     <div className="flex flex-col min-h-screen">
 
-
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        {/* Hero Section - Y Combinator Style */}
+        <section className="py-20 md:py-28 bg-gray-50">
           <div className="container max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Problem Statements for Innovators</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-900 leading-tight">
+              Challenges for Innovators
+            </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              These are real-world challenges we'd like to see teams tackle during the hackathon. Each represents an
-              opportunity to create meaningful impact with AI. Choose one that excites you, or use it as inspiration for
-              your own innovative solution.
+              These are real-world problems we'd like to see teams tackle. Each represents an opportunity to create
+              meaningful impact with AI. Choose one that excites you, take it as extra validation to dive in, but you
+              don't need to work on these ideas to participate in the hackathon.
             </p>
           </div>
         </section>
 
-        {/* Category Navigation */}
-        <section className="py-8 bg-white border-b">
+        {/* Category Navigation - Y Combinator Style */}
+        <section className="py-8 px-4 bg-white">
           <div className="container max-w-4xl mx-auto">
-            <div className="flex flex-wrap gap-3 justify-center">
+            <div className="flex flex-wrap gap-2 justify-center">
               {categories.map((category) => (
                 <button
                   key={category}
@@ -227,109 +190,119 @@ export default function ProblemsPage() {
         </section>
 
         {/* Active Category Description */}
-        <section className="py-12 bg-white">
+        <section className="py-12 px-4 bg-white">
           <div className="container max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">
-              {activeCategory === "All Categories" ? "All Problem Statements" : activeCategory}
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              {activeCategory === "All Challenges" ? "All Challenges" : activeCategory}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              {activeCategory === "All Categories"
-                ? "Explore all available problem statements across different categories. Each problem is designed to challenge your team and create real-world impact through innovative AI solutions."
-                : `Focused challenges in ${activeCategory.toLowerCase()} that leverage AI to solve critical problems in this domain. These problems require deep understanding of both AI technologies and domain-specific challenges.`}
+              {activeCategory === "All Challenges"
+                ? "2025 is shaping up to be the year of practical AI applications. We've put together a list of challenge areas that we think are especially promising for creating real-world impact through innovative solutions."
+                : `Focused challenges in ${activeCategory.toLowerCase()} that leverage AI to solve critical problems and create meaningful impact in this domain.`}
             </p>
           </div>
         </section>
 
-        {/* Problem Statements */}
-        <section className="py-8 bg-gray-50">
-          <div className="container max-w-4xl mx-auto space-y-12">
+        {/* Problem Statements - Y Combinator Style */}
+        <section className="py-8 px-4 bg-gray-50">
+          <div className="container max-w-4xl mx-auto space-y-16">
             {filteredProblems.map((problem) => (
-              <div key={problem.id} className="bg-white rounded-lg shadow-sm border p-8">
-                <div className="mb-6">
-                  <div className="flex flex-wrap items-center gap-3 mb-3">
-                    <span className="inline-block px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full">
-                      {problem.category}
-                    </span>
-                    <span
-                      className={`inline-block px-3 py-1 text-sm font-medium rounded-full ${
-                        problem.difficulty === "Advanced"
-                          ? "bg-red-100 text-red-800"
-                          : problem.difficulty === "Intermediate"
-                            ? "bg-yellow-100 text-yellow-800"
-                            : "bg-green-100 text-green-800"
-                      }`}
-                    >
-                      {problem.difficulty}
-                    </span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{problem.title}</h3>
-                  <p className="text-orange-600 font-medium">By {problem.author}</p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-gray-400" />
-                    <span className="text-sm text-gray-600">{problem.timeEstimate}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-gray-400" />
-                    <span className="text-sm text-gray-600">{problem.teamSize}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Trophy className="h-5 w-5 text-gray-400" />
-                    <span className="text-sm text-gray-600">{problem.impact}</span>
-                  </div>
-                </div>
-
-                <div className="prose prose-gray max-w-none">
-                  <p className="text-lg text-gray-700 mb-4">{problem.description}</p>
-                  <p className="text-gray-600 mb-6">{problem.detailedDescription}</p>
-
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-3">Key Requirements</h4>
-                      <ul className="space-y-2">
-                        {problem.requirements.map((req, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <span className="text-orange-500 mt-1">•</span>
-                            <span className="text-gray-600">{req}</span>
-                          </li>
-                        ))}
-                      </ul>
+              <div key={problem.id} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                <div className="p-8 md:p-12">
+                  {/* Header */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="p-2 bg-orange-100 rounded-lg text-orange-600">{problem.icon}</div>
+                      <span className="inline-block px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full">
+                        {problem.category}
+                      </span>
+                      <span
+                        className={`inline-block px-3 py-1 text-sm font-medium rounded-full ${getDifficultyColor(problem.difficulty)}`}
+                      >
+                        {problem.difficulty}
+                      </span>
                     </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">{problem.title}</h3>
+                    <p className="text-lg text-gray-700 leading-relaxed">{problem.shortDescription}</p>
+                  </div>
 
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-3">Provided Resources</h4>
-                      <ul className="space-y-2">
-                        {problem.resources.map((resource, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <span className="text-orange-500 mt-1">•</span>
-                            <span className="text-gray-600">{resource}</span>
-                          </li>
-                        ))}
-                      </ul>
+                  {/* Context */}
+                  <div className="mb-8">
+                    <p className="text-gray-600 leading-relaxed mb-6">{problem.context}</p>
+                    <p className="text-gray-600 leading-relaxed">{problem.whyItMatters}</p>
+                  </div>
+
+                  {/* Challenge */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Your Challenge</h4>
+                    <p className="text-gray-700 mb-4 leading-relaxed">{problem.challenge}</p>
+
+                    <div className="space-y-3">
+                      {problem.yourTask.map((task, index) => (
+                        <div key={index} className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-gray-600">{task}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </div>
 
-                <div className="mt-8 pt-6 border-t border-gray-200">
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button className="bg-orange-500 hover:bg-orange-600">
+                  {/* Focus Areas */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">What to Focus On</h4>
+                    <div className="space-y-3">
+                      {problem.focusAreas.map((area, index) => (
+                        <div key={index} className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-gray-600">{area}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Meta Information */}
+                  <div className="grid md:grid-cols-3 gap-6 mb-8 p-6 bg-gray-50 rounded-lg">
+                    <div className="flex items-center gap-3">
+                      <Clock className="h-5 w-5 text-gray-400" />
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">Time Estimate</p>
+                        <p className="text-sm text-gray-600">{problem.timeEstimate}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Users className="h-5 w-5 text-gray-400" />
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">Team Size</p>
+                        <p className="text-sm text-gray-600">{problem.teamSize}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Trophy className="h-5 w-5 text-gray-400" />
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">Impact</p>
+                        <p className="text-sm text-gray-600">{problem.impact}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Actions */}
+                  {/* <div className="flex flex-col sm:flex-row gap-4">
+                    <Button className="bg-orange-500 hover:bg-orange-600 text-white">
                       <Lightbulb className="h-4 w-4 mr-2" />
-                      Choose This Problem
+                      Work on This Challenge
                     </Button>
-                    <Button variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-50">
-                      Get More Details
+                    <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50">
+                      Discuss with Mentors
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-
       </main>
+
     </div>
   )
 }
