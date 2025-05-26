@@ -27,6 +27,10 @@ export function NavigationBar() {
       name: "FAQ's",
       link: "/faq",
     },
+    {
+      name: "Problems",
+      link: "/problems",
+    },
         {
       name: "Results",
       link: "/results",

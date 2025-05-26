@@ -58,13 +58,13 @@ const Hero = () => {
               </Button>
             </Link> */}
             <RegisterButton text="Download App" className="bg-orange-500 hover:bg-orange-600 cursor-pointer" />
-            <Link href={"#about"}>
+            <Link href={"/problems"}>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-orange-500 text-orange-500 hover:bg-orange-50 hover:text-orange-600 cursor-pointer"
               >
-                Learn More
+                View Problems
               </Button>
             </Link>
             
