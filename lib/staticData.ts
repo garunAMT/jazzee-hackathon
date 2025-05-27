@@ -206,7 +206,7 @@ export const JudgeDetails = {
       image:
         "https://res.cloudinary.com/dtipcangs/image/upload/v1747216095/udayan-kanade_tlwbw7.jpg",
       currentPosition: "Founder and CEO",
-      company: "Omnesys Technologies",
+      company: "Oneirix Labs",
       pastPositions: ["CEO, Oneirix Labs", "CEO, Noumenon Multiphysics"],
       education: [
         "BE, Computer Engineering, Savitribai Phule Pune University",

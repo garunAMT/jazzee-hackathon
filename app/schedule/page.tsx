@@ -88,7 +88,7 @@ export default function ProcessFlowSinglePaths() {
         content={
           <p>
             <Clock className="inline mr-2" />
-            Until May 31, 2025
+            Until June 5, 2025
           </p>
         }
         cumulativeTime="Start"
