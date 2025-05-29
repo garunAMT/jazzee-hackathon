@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link href="https://www.linkedin.com/in/jazzee-technologies-2393a0357/" target='_blank' className="hover:text-orange-400">
                   LinkedIn
                 </Link>
-                <Link href="https://www.instagram.com/jazzee_technologies?igsh=MTkzbThrM3cxcHFmdg==" target='_blank' className="hover:text-orange-400">
+                <Link href="https://www.instagram.com/jazzee.technologies?igsh=NzJ2YzViazFyZ3k=" target='_blank' className="hover:text-orange-400">
                   Instagram
                 </Link>
               </div>
