@@ -84,7 +84,7 @@ const Hero = () => {
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto text-gray-500">
-              Welcome to Trillion Doller Opportunity (T$O)—a global jam session of ideas, hosted by Jazzee, the rule-breaking virtuoso of generative AI. Just like jazz, Jazzee doesn&apos;t follow the script—it riffs, experiments, and improvises its way into the future. 
+              Welcome to Trillion Dollar Opportunity (T$O)—a global jam session of ideas, hosted by Jazzee, the rule-breaking virtuoso of generative AI. Just like jazz, Jazzee doesn&apos;t follow the script—it riffs, experiments, and improvises its way into the future. 
             </p>
             <p className="max-w-3xl mx-auto text-gray-500">
               T$O invites students from every corner of the world to sync up and swing into action, tackling real-world challenges in engineering, cybersecurity, education, healthcare, life sciences, and IoT. It&apos;s not just a hackathon—it&apos;s a stage where bold minds collaborate, improvise, and compose solutions with trillion-dollar potential. At Jazzee, we don&apos;t just play the notes—we change the tune.

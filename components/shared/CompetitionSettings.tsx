@@ -10,6 +10,9 @@ export function CompetitionSettings() {
           <p className="max-w-3xl mx-auto text-gray-500">
             Everything you need to know about the hackathon format, judging criteria, and expectations.
           </p>
+          <p className="max-w-3xl mx-auto text-gray-900">
+            *Registration fees will be waived for teams with strong recommendation from Dean or VC of the University.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
