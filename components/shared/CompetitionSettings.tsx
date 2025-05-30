@@ -11,7 +11,7 @@ export function CompetitionSettings() {
             Everything you need to know about the hackathon format, judging criteria, and expectations.
           </p>
           <p className="max-w-4xl mx-auto text-orange-500 font-semibold">
-            *Registration fees will be waived for teams with strong recommendation from Dean or VC of the University.
+            *Registration fees will be waived for teams with strong recommendation from Dean or VC of the University. Recommendation letter can by submitted by June 14th, 2024 to qualify for waiver.
           </p>
         </div>
 
