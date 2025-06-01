@@ -163,6 +163,26 @@ export const JudgeDetails = {
       ],
       linkedIn: "https://www.linkedin.com/in/varunbhtt21/",
     },
+    {
+      id: 15,
+      name: "Dr. Abhishek Bhatt",
+      image:
+        "https://res.cloudinary.com/dtipcangs/image/upload/v1748767314/Abhishek-Bhatt-6_g4oibd.jpg",
+      currentPosition: "Faculty, Centre for AI",
+      company:
+        "MITS, Gwalior",
+      pastPositions: [
+        "Faculty, College of Engineering Pune",
+        "Faculty, Symbiosis Skills and Professional University Pune",
+        "Researcher, Samsung Research Institute Bangalore",
+      ],
+      education: [
+        "B.E.",
+        "M.Tech",
+        "Ph.D., Machine Learning and Computer Vision, IIT Roorkee",
+      ],
+      linkedIn: "https://www.linkedin.com/in/dr-abhishek-bhatt-74a83075", // LinkedIn profile not provided
+    },
   ],
 
   BiotechAndLifeSciences: [
