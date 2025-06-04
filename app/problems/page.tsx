@@ -24,6 +24,7 @@ import {
   Building,
   Puzzle,
   AlertTriangle,
+  Code,
 } from "lucide-react";
 
 const categories = [
@@ -620,6 +621,39 @@ const problemStatements = [
     ],
     impact: "Very High - Save lives and resources in vulnerable areas",
   },
+  {
+  id: 20,
+  title: "Can You Auto-Convert Figma Designs Into Production-Ready React Native Code?",
+  category: "AI + Web Tools",
+  icon: <Code className="h-6 w-6" />,
+  difficulty: "Advanced",
+  timeEstimate: "36-48 hours",
+  teamSize: "2-4 members",
+  shortDescription:
+    "Build an AI-powered tool that reads Figma designs and outputs clean, modular React Native code—accelerating app development and preserving design fidelity.",
+  challenge:
+    "Develop a tool that bridges the gap between designers and developers by automatically converting UI/UX designs from Figma into working React Native code.",
+  context:
+    "Developers often spend hours translating static Figma files into mobile code—manually implementing layout, styles, and interactions. This process is slow and error-prone. With AI, we can turn design into code instantly and accurately.",
+  whyItMatters:
+    "Speed and consistency are critical in modern app development. Automating the design-to-code pipeline can reduce friction, eliminate human error, and help teams ship better apps, faster.",
+  yourTask: [
+    "Parse Figma design files or UX screenshots to extract layout and UI elements",
+    "Generate clean, modular React Native code with components like View, Text, Image, TouchableOpacity",
+    "Preserve design properties: layout, color, fonts, spacing, responsiveness",
+    "Ensure that the code is readable, maintainable, and follows best practices",
+    "Bonus: Support reusable design systems or component libraries (e.g., map Figma buttons to custom components)"
+  ],
+  focusAreas: [
+    "AI-based layout parsing",
+    "Code generation (React Native)",
+    "Preservation of design structure and hierarchy",
+    "Design system/component mapping",
+    "Bonus: Support for responsiveness and modular architecture"
+  ],
+  impact: "High - Automate the design-to-development pipeline and boost product velocity"
+}
+
 ];
 
 export default function ProblemsPage() {
@@ -657,8 +691,9 @@ export default function ProblemsPage() {
               represents an opportunity to create meaningful impact with AI.
               Choose one that excites you, take it as extra validation to dive
               in, but you don't need to work on these ideas to participate in
-              the hackathon.
+              the hackathon. 
             </p>
+            <p className="text-lg md:text-xl text-orange-600 leading-relaxed max-w-3xl mx-auto">You can bring your own problems.</p>
           </div>
         </section>
 

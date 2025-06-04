@@ -1,3 +1,5 @@
+import { i } from "motion/react-client";
+
 export const JudgeDetails = {
   Cybersecurity: [
     {
@@ -301,4 +303,9 @@ export const IndustryPartners = [
     name: "Bipros",
     logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1747213179/BIPROS_bkclnr.jpg",
   },
+  {
+    id: 8,
+    name: "Euron",
+    logo: "https://res.cloudinary.com/dtipcangs/image/upload/v1749028051/euron_full_size_black_qpnzyo.png",
+  }
 ];
