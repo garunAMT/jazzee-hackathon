@@ -1,17 +1,29 @@
-import { Users, Calendar, Award, BookOpen, Presentation, CheckCircle } from "lucide-react"
+import {
+  Users,
+  Calendar,
+  Award,
+  BookOpen,
+  Presentation,
+  CheckCircle,
+} from "lucide-react";
 
 export function CompetitionSettings() {
   return (
     <section id="competition-settings" className="py-8 md:py-12 bg-white px-10">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Competition Settings</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Competition Settings
+          </h2>
           <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-500">
-            Everything you need to know about the hackathon format, judging criteria, and expectations.
+            Everything you need to know about the hackathon format, judging
+            criteria, and expectations.
           </p>
           <p className="max-w-4xl mx-auto text-orange-500 font-semibold">
-            *Registration fees will be waived for teams with strong recommendation from Dean or VC of the University. Recommendation letter can by submitted by June 14th, 2024 to qualify for waiver.
+            *Registration fees will be waived for teams with strong
+            recommendation from Dean or VC of the University. Recommendation
+            letter can by submitted by June 14th, 2024 to qualify for waiver.
           </p>
         </div>
 
@@ -24,24 +36,28 @@ export function CompetitionSettings() {
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
-                <span>Teams of 2-4 members</span>
+                <span>Teams of 2-5 members</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
                 <span>Registration fee: ₹1000 for 2 members</span>
               </li>
-                            <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
                 <span>Registration fee: ₹1200 for 3 members</span>
               </li>
-                            <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
                 <span>Registration fee: ₹1400 for 4 members</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-orange-500 mt-1">•</span>
-                <span>Students, professionals, and AI enthusiasts welcome</span>
+                <span>Registration fee: ₹1500 for 5 members</span>
               </li>
+              {/* <li className="flex items-start gap-2">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Students, professionals, and AI enthusiasts welcome</span>
+              </li> */}
             </ul>
           </div>
 
@@ -176,6 +192,6 @@ export function CompetitionSettings() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 // This component is a section of a webpage that outlines the competition settings for a hackathon.
