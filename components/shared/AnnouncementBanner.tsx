@@ -67,7 +67,7 @@ export function AnnouncementBanner() {
   const [isVisible, setIsVisible] = useState(true)
 
   // Registration end date: February 28, 2025
-  const registrationEndDate = new Date("2025-06-05T23:59:59")
+  const registrationEndDate = new Date("2025-06-08T23:59:59")
 
   if (!isVisible) return null
 

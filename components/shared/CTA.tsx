@@ -82,7 +82,7 @@ const CTA = () => {
           </h2>
           <p className="max-w-2xl mx-auto mb-8 text-orange-50">
             Join us for an unforgettable weekend of innovation, learning, and
-            collaboration. Registration closes on June 5, 2025.
+            collaboration. Registration closes on June 8, 2025.
           </p>
 
           <RegisterButton
