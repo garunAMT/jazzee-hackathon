@@ -35,6 +35,10 @@ export function NavigationBar() {
       name: "Results",
       link: "/results",
     },
+    {
+      name: "Announcements",
+      link: "/announcements",
+    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
