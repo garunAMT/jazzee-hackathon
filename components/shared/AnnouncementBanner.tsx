@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { X, Clock } from "lucide-react"
+import Link from "next/link"
 
 interface CountdownTimerProps {
   targetDate: Date
@@ -86,6 +87,12 @@ export function AnnouncementBanner() {
 
           <div>
             <span>Download Jazzee EdTech app to register</span>
+          </div>
+
+          
+          <div className="hidden md:block">|</div>
+          <div>
+            <span className="underline"><Link href={"/announcements"}>See announcements</Link></span>
           </div>
         </div>
 

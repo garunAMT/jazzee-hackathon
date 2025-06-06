@@ -67,7 +67,7 @@ export default function AnnouncementsPage() {
   })
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen px-4">
 
 
       <main className="flex-1">
