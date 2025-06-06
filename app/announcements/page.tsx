@@ -10,7 +10,7 @@ const announcements = [
   {
     id: 1,
     title: "Hackathon Orientation",
-    date: "March 14, 2025", // Tomorrow's date relative to the event
+    date: "June 7, 2025", // Tomorrow's date relative to the event
     time: "11:30 AM - 12:30 PM",
     location: "Online",
     description:
@@ -21,7 +21,7 @@ const announcements = [
   {
     id: 2,
     title: "Intro to GenAI and Prompt Engineering Workshop",
-    date: "March 16, 2025", // Sunday
+    date: "June 8, 2025", // Sunday
     time: "11:00 AM - 12:30 PM",
     location: "Online",
     description:
