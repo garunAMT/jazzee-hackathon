@@ -11,7 +11,7 @@ const announcements = [
     id: 1,
     title: "Hackathon Orientation",
     date: "June 7, 2025", // Tomorrow's date relative to the event
-    time: "11:30 AM - 12:30 PM",
+    time: "11:00 AM - 12:00 PM",
     location: "Online",
     description:
       "All registered participants must attend this orientation session. We'll cover hackathon rules, explain judging criteria, and answer any questions. Team formation assistance will also be available for those who haven't formed teams yet.",
