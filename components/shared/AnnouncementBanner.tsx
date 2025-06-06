@@ -92,7 +92,7 @@ export function AnnouncementBanner() {
           
           <div className="hidden md:block">|</div>
           <div>
-            <span className="underline"><Link href={"/announcements"}>See announcements</Link></span>
+            <span className="underline text-gray-100 font-bold"><Link href={"/announcements"}>See announcements</Link></span>
           </div>
         </div>
 
