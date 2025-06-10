@@ -10,7 +10,7 @@ const announcements = [
   {
     id: 1,
     title: "Hackathon Orientation",
-    date: "June 7, 2025", // Tomorrow's date relative to the event
+    date: "June 7, 2025",
     time: "11:00 AM - 12:00 PM",
     location: "Online",
     description:
@@ -21,7 +21,7 @@ const announcements = [
   {
     id: 2,
     title: "Intro to GenAI and Prompt Engineering Workshop",
-    date: "June 8, 2025", // Sunday
+    date: "June 8, 2025",
     time: "11:00 AM - 12:30 PM",
     location: "Online",
     description:
@@ -29,29 +29,56 @@ const announcements = [
     isImportant: true,
     category: "Workshop",
   },
-//   {
-//     id: 3,
-//     title: "API Access Credentials Distribution",
-//     date: "March 14, 2025",
-//     time: "2:00 PM - 4:00 PM",
-//     location: "Help Desk, Main Lobby",
-//     description:
-//       "All teams can collect their API access credentials for various AI services and cloud platforms. These include OpenAI, Google Cloud, AWS credits, and other tools you'll need during the hackathon.",
-//     isImportant: true,
-//     category: "Resource",
-//   },
-//   {
-//     id: 4,
-//     title: "Design Thinking for AI Products Workshop",
-//     date: "March 15, 2025",
-//     time: "3:00 PM - 4:30 PM",
-//     location: "Workshop Room B, Tech Innovation Center",
-//     description:
-//       "This workshop will cover essential design thinking principles specifically for AI-powered products. Learn how to create intuitive user experiences and interfaces that make your AI solutions more accessible and user-friendly.",
-//     isImportant: false,
-//     category: "Workshop",
-//   },
-]
+  {
+    id: 3,
+    title: "Integrating LLMs with Python: Build Real-World AI Apps (Gemini, OpenAI APIs)",
+    date: "June 10, 2026",
+    time: "11:00 AM - 12:30 PM",
+    location: "Online",
+    description:
+      "Learn how to integrate large language models (LLMs) with Python to create practical AI applications. This session will explore APIs like OpenAI and Gemini for real-world use cases.",
+    isImportant: true,
+    category: "Workshop",
+    instructor: "Varun Bhatt"
+  },
+  {
+    id: 4,
+    title: "No-Code + Low-Code AI App Building: Using Cursor & Lovable",
+    date: "June 11, 2026",
+    time: "11:00 AM - 12:30 PM",
+    location: "Online",
+    description:
+      "Explore tools like Cursor and Lovable to build AI applications with minimal coding. Perfect for non-technical users and rapid prototyping.",
+    isImportant: true,
+    category: "Workshop",
+    instructor: "Varun Bhatt"
+  },
+  {
+    id: 5,
+    title: "Capstone Project Day: Build & Showcase Your Own AI-Powered Application",
+    date: "June 12, 2026",
+    time: "11:00 AM - 12:30 PM",
+    location: "Online",
+    description:
+      "A dedicated day to develop, finalize, and present your AI-powered projects. Collaborate with peers and get feedback from instructors.",
+    isImportant: true,
+    category: "Event",
+    instructor: "Varun Bhatt"
+  },
+  {
+    id: 6,
+    title: "Project Presentation & Documentation",
+    date: "June 13, 2026",
+    time: "11:00 AM - 12:30 PM",
+    location: "Online",
+    description:
+      "Wrap up your project with a final presentation and proper documentation. Guidance will be provided to ensure clarity and impact.",
+    isImportant: true,
+    category: "Event",
+    instructor: "Pooja Yadav"
+  }
+];
+
 
 export default function AnnouncementsPage() {
 //   const [filter, setFilter] = useState("All")
