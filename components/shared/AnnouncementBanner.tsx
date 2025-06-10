@@ -78,16 +78,16 @@ export function AnnouncementBanner() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center md:text-left">
           <div className="flex items-center gap-2">
             <Clock className="h-5 w-5" />
-            <span className="font-medium">Registration Closing In:</span>
+            <span className="font-medium">Registration Closed</span>
           </div>
 
-          <CountdownTimer targetDate={registrationEndDate} />
+          {/* <CountdownTimer targetDate={registrationEndDate} /> */}
 
-          <div className="hidden md:block">|</div>
+          {/* <div className="hidden md:block">|</div>
 
           <div>
             <span>Download Jazzee EdTech app to register</span>
-          </div>
+          </div> */}
 
           
           <div className="hidden md:block">|</div>

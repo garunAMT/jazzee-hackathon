@@ -100,7 +100,7 @@ export default function ProcessFlowSinglePaths() {
         content={
           <p>
             <Clock className="inline mr-2" />
-            June 15, 2025
+            June 16, 2025
           </p>
         }
         cumulativeTime="6 weeks"
@@ -111,7 +111,7 @@ export default function ProcessFlowSinglePaths() {
                 content: (
                     <p>
                     <Clock className="inline mr-2" />
-                    Date announce soon
+                    June 8-14, 2025
                     </p>
                 ),
                 },
@@ -125,7 +125,7 @@ export default function ProcessFlowSinglePaths() {
         content={
           <p>
             <Clock className="inline mr-2" />
-            June 16-20, 2025
+            June 17-20, 2025
           </p>
         }
         cumulativeTime="14 weeks"

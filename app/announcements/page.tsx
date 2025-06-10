@@ -67,7 +67,7 @@ const announcements = [
   },
   {
     id: 6,
-    title: "Project Presentation & Documentation",
+    title: "How to make Project Presentation & Documentation with an Impact",
     date: "June 14, 2025",
     time: "11:00 AM - 12:30 PM",
     location: "Online",

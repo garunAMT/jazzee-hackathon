@@ -32,8 +32,8 @@ export function NavigationBar() {
       link: "/problems",
     },
         {
-      name: "Results",
-      link: "/results",
+      name: "Rules",
+      link: "/rules",
     },
     {
       name: "Announcements",
