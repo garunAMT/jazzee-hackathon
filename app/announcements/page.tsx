@@ -32,7 +32,7 @@ const announcements = [
   {
     id: 3,
     title: "Integrating LLMs with Python: Build Real-World AI Apps (Gemini, OpenAI APIs)",
-    date: "June 10, 2025",
+    date: "June 11, 2025",
     time: "11:00 AM - 12:30 PM",
     location: "Online",
     description:
@@ -44,7 +44,7 @@ const announcements = [
   {
     id: 4,
     title: "No-Code + Low-Code AI App Building: Using Cursor & Lovable",
-    date: "June 11, 2025",
+    date: "June 12, 2025",
     time: "11:00 AM - 12:30 PM",
     location: "Online",
     description:
@@ -56,7 +56,7 @@ const announcements = [
   {
     id: 5,
     title: "Capstone Project Day: Build & Showcase Your Own AI-Powered Application",
-    date: "June 12, 2025",
+    date: "June 13, 2025",
     time: "11:00 AM - 12:30 PM",
     location: "Online",
     description:
@@ -68,7 +68,7 @@ const announcements = [
   {
     id: 6,
     title: "Project Presentation & Documentation",
-    date: "June 13, 2025",
+    date: "June 14, 2025",
     time: "11:00 AM - 12:30 PM",
     location: "Online",
     description:
