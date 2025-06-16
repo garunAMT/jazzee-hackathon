@@ -47,9 +47,9 @@ const rulesData = {
           description:
             "GitHub Repository must be submitted through the Jazzee Edtech app and public mode must be enabled. The GitHub Repository must contain both the Video link + Document in one single repository itself following the naming convention.",
           details: [
-            "TeamName_TeamLeader_T$O2025 (GitHub Repository)",
-            "TeamName_TeamLeader_T$O2025_PitchVideo (YouTube Video Name)",
-            "TeamName_TeamLeader_T$O2025_Document (format-pdf)",
+            "TeamName_TeamLeader_Jazzee2025 (GitHub Repository)",
+            "TeamName_TeamLeader_Jazzee2025_PitchVideo (YouTube Video Name)",
+            "TeamName_TeamLeader_Jazzzee2025_Document (format-pdf)",
           ],
         },
       ],
