@@ -130,6 +130,12 @@ const rulesData = {
           description:
             "Jazzee reserves the right to disqualify any team at any stage for violating any of the above rules or engaging in unfair practices.",
         },
+        {
+          number: 15,
+          title: "Final Authority",
+          description:
+            "In case of any discrepancies or disputes, the decision of the organizers will be final and binding.",
+        }
       ],
     },
   ],
