@@ -134,7 +134,7 @@ const rulesData = {
           number: 15,
           title: "Final Authority",
           description:
-            "In case of any discrepancies or disputes, the decision of the organizers will be final and binding.",
+            "Jazzee Technologies reserves the right to modify these rules at any time. All participants will be notified of any changes. In case of any discrepancies or disputes, the decision of the organizers will be final and binding.",
         }
       ],
     },
